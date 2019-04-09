@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Hello World</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Hello World</title>
+</head>
+
+<body>
+
+<h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+  <!-- To create a "dead link", a link that doesn't do anything, put a # where the link should be, e.g. href="#" -->
+
+  <a href="#">
+    <img src="http://bit.ly/fcc-relaxing-cat" alt="It's a cutesy-wutsey orange kitten lying on its back on top a wooden floor iwth its grey and white buddy in the background.">
+  </a>
+
+<!-- If you want to create a link to something else on this webpage, then you can add # in the href attribute to what you want to link to.  -->
+<!-- An id is an attribute that uniquely identifies an element.  -->
+
+<div>
+  <p> Things cat love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>eating mice</li>
+    <li>having sex</li>
+  </ul>
+
+  <p>Top 3 things cat hate:</p>
+  <ol>
+    <li>Needy owners</li>
+    <li>Pulling out too soon</li>
+    <li>Cat exterminators</li>
+  </ol>
+</div>
+
+  <form action="/submit-cat-photo">
+  <!-- To have the input text box actually submit the cat photo URL to your server, you'd want to have the text box code inside of a form element.  -->
+  <input type="text" required placeholder="cat photo URL">
+  <!-- The placeholder specifier indicates what will appear in the text box before the user changes what is in there.  -->
+  <!-- Add the attribute (which is something that specifies what the element will do/need) to make it mandatory for the user to write stuff into the box before submitting it.  -->
+
+  <!-- Create a set of radio buttons, which only allow for one answer to be selected -->
+  <!-- Create an indoor button, which will be part of the set of options called indoor-outdoor to associate the two in the same radio group -->
+  <label for="indoor">
+    <input checked id="indoor" type="radio" name="indoor-outdoor">Indoor
+  </label>
+
+  <!-- Create an outdoor button, which will be part of the set of options called indoor-outdoor -->
+  <label for="outdoor">
+    <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor
+    <!-- The "Indoor" and "Outdoor" text following the input element will be what the buttons display as their names. -->
+  </label>
+
+  <!-- Create a set of 3 checkboxes, each with their own label element and with the name attribute of personality, e.g. name ="personality"  -->
+  <label for="conniving">
+    <input checked id="conniving" type="checkbox" name="personality">Conniving
+  </label>
+
+  <label for="earnest">
+      <input id="earnest" type="checkbox" name="personality">Earnest
+  </label>
+
+  <label for="average">
+      <input id="average" type="checkbox" name="personality">Average
+  </label>
+
+  <button type="submit">Submit</button>
+  <!-- Clicking on this button will allow the user to submit the URL to the server.  -->
+  </form>
+
+
+
+</main>
+
+<footer id =footer>Copyright Cat Photo App</footer>
+
+</body>
+
 </html>
