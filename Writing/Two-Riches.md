@@ -19,7 +19,7 @@ Inspired by a Reading of *Linchpin* (Seth Godin, 2010).
 * Shows up and does his work
 * Is open to change and uncertainty
 * Develops a vision for himself and acts to make it come true, but lets it go when necessary
-* Dreams new dreams that resonate with him and inspire him to grow 
+* Dreams new dreams that resonate with him and inspire him to grow
 
 ### References
 * Godin, S. (2010). *Linchpin: Are You Indispensable?*. New York: Portfolio.
