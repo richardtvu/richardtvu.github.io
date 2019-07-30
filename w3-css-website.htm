@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	<!-- Setting the title, creating some scripts, making sure site is compatible across devices, and linking CSS--> 
+	<head>
+		<!--Meta data within the head that won't be shown on the webpage. The title will show on the tab, the script is producing a sort of macro that can be re-used to style something easily in the body. --> 
+		<meta charset="UTF-8">
+		<title>The Life of Richard</title> 
+		<script>document.createElement("myHero")</script>
+			<!-- style for the above script --> 
+			<style>
+			myHero {
+				display: block; 
+				background-color: #dddddd;
+				padding: 50px;
+				font-size: 30px;
+			}
+			address { 
+				display: block;
+				font-style: italic;
+			}
+			</style> 
+		<!-- Meta tag to allow site to work on all devices and screen resolutions --> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<!-- Using w3css style sheet --> 
+		<link rel="stylesheet" href="w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	</head> 
+	<!-- Content goes here --> 
+	<body>
+		<!--Navigation bar --> 
+		<nav class="w3-bar w3-black">
+		  <a href="#home" class="w3-button w3-bar-item">Home</a>
+		  <a href="#about-me" class="w3-button w3-bar-item">About Me</a>
+		  <a href="#coworkers" class="w3-button w3-bar-item">Coworkers</a>
+		  <a href="contact-me.htm" class="w3-button w3-bar-item">Contact</a>
+		</nav>
+		<!-- Slide Show --> 
+		<section>
+		  <img class="mySlides" src="cigna_one.jpg" style="width:100%">
+		  <img class="mySlides" src="cigna_two.jpg" style="width:100%">
+		  <img class="mySlides" src="cigna_three.jpg" style="width:100%">
+		</section>
+			<script>
+			// Automatic Slideshow - change image every 3 seconds
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			  }
+			  myIndex++;
+			  if (myIndex > x.length) {myIndex = 1}
+			  x[myIndex-1].style.display = "block";
+			  setTimeout(carousel, 3000);
+			}
+			</script>
+		<!--- The Rich Description ---> 
+		<section class="w3-container w3-content w3-center" style="max-width:600px">
+			<h2 class="w3-wide w3-center">The Life of Richard Vu at Cigna </h2>
+			<p class="w3-opacity"><i>Cigna is a health insurance company.<i></p> 
+		</section> 
+		<!-- Paragraph describing the life of Richard --> 
+		<section class="w3-container w3-content w3-center" style="max-width:600px">
+			<p class = "w3-justify">
+			This is my first webpage written at Cigna. I started working at Cigna on May 13, 2019 and started development of this website on July 26, 2019. 
+			If you're interested in the process of how I developed this website, you can visit <a href = "https://www.w3schools.com/howto/howto_website.asp">w3school</a>. <br> <br> 
+			My goal is to learn to use <a href="https://www.w3schools.com/w3css/w3css_intro.asp">W3.CSS</a> to make my own website and modify it to make it uniquely my own! 
+			I want to learn how to do these things: 
+			</p> 
+			<ul class = "w3-justify">
+				<li> Make a website from "scratch". </li> 
+				<li> Make an input form for contacting me </li> 
+				<li> Create a w3-ul class list </li> 
+				<li> Make W3.CSS Tabs that will display information on Jordan Peterson, Nassim Taleb, and Neo. Specifically, I want to talk about how they've influenced me! </li> 
+			</ul>
+		</section> 
+		<!-- Articles --> 
+		<section class="w3-row-padding w3-center w3-light-grey"> 
+			<myHero class="w3-center w3-light-grey">Current Influences</myHero> 
+			<article class="w3-third">
+				<p> Jordan Peterson </p> 
+				<img src = "https://www.rochesterfirst.com/wp-content/uploads/sites/66/2018/06/jordan-peterson_1529938049954_46648724_ver1.0.jpg?w=1440&h=2560&crop=1" alt = "Portrait of Jordan Peterson" style="width:85%">
+				<p> “You don't get to choose not to pay a price, you only get to choose which price you pay.”  </p> 
+			</article> 
+			<article class="w3-third">
+				<p> Nassim Nicholas Taleb </p> 
+				<img src = "nassim_taleb.jpg" alt = "Painting of Nassim Taleb" style="width:101%">
+				<p> "The resilient resists shocks and stays the same; the antifragile gets better.” </p>
+			</article> 
+			<article class="w3-third">
+				<p> George Leonard </p>
+				<img src ="george-leonard.jpg" alt="Picture of George Leonard" style="width:100.75%">
+				<p> "To be a learner, you've got to be willing to be a fool.”  </p> 
+			</article> 
+		</section> 
+		<!-- Footer -->
+		<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+			<a href="https://www.linkedin.com/in/richard-vu-679b17121/"><i class="fa fa-linkedin"></i></a>
+			
+		</footer> 
+	</body>
+	
+</html>
+
+
