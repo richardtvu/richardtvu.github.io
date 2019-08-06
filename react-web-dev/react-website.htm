@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>My Fourth Website: Using React</title>
+    <!-- Viewport allows the website to look nice on mobile devices and personal computers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <!-- Content goes here -->
+  <body>
+    <!-- Header and Top of the Website -->
+    <h1>React Website by Richard Vu</h2>
+    <p> Added react component using instructions from <a href="https://reactjs.org/docs/add-react-to-a-website.html"><i>Add React to a website</i></a> </p>
+    <p>The component added is a "like" button that you can click on.</p>
+    <br>
+
+    <h3>For more cool links, check out the following:</h3>
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="https://reactjs.org/docs/getting-started.html">Getting Started with react</a> <br>
+      <a href="https://reactjs.org/tutorial/tutorial.html">Tutorial: Intro to React</a> <br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">Javascript Refresher</a> <br>
+    </nav>
+    <br>
+    <h3>It's the moment you've been waiting for! Here is the "like button":</h3>
+
+    <!-- React Component -->
+    <div id="like_button_container"></div>
+
+    <!-- Load React with Two Scripts -->
+      <!-- The tutorial says to replace the "Development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+
+    <!-- Load React Component -->
+    <script src="like_button.js"></script>
+
+  </body>
+</html>
