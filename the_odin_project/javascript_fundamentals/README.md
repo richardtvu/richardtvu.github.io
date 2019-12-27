@@ -1,0 +1,1 @@
+This directory will contain test code/example code that I get from the Odin Project when I'm learning about JavaScript fundamentals. 
