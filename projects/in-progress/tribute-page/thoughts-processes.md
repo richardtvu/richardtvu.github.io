@@ -65,10 +65,10 @@ Dr. Peterson is the father that thousands, hundreds of thousands of men, perhaps
     - December 30, 2019: 
         - Today, my goal is to get the outline of the front page and the table of contents running. 
             - A Front Page
-                - Dr. Jordan Peterson's Name at the Top
-                - Dr. Jordan Peterson's Portrait in the middle.
-                - Textbox called "OPEN" on the center right portion of the webpage instead of a clasp. 
-                - Make the text a hyperlink to the table of contents
+                [x] Dr. Jordan Peterson's Name at the Top
+                [x] r. Jordan Peterson's Portrait in the middle.
+                [x] Textbox called "OPEN" on the center right portion of the webpage instead of a clasp. 
+                [x] Make the text a hyperlink to the table of contents
             - Table of Contents: 
                 - A header saying "Table of Contents"
                 - Bulleted list of links to pages 
