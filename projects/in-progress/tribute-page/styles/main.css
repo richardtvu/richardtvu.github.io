@@ -1,12 +1,6 @@
 @import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
 
-#main {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; ;
-    align-items: center; 
-
-}
 
 /* Universal settings */ 
 body {
@@ -16,9 +10,10 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: flex-start;
+    align-items: center;  
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
