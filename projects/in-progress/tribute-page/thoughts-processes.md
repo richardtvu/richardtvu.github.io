@@ -64,28 +64,18 @@ Dr. Peterson is the father that thousands, hundreds of thousands of men, perhaps
 
     - December 30, 2019: 
         - Today, my goal is to get the outline of the front page and the table of contents running. 
-            - A Front Page
+            - [x] A Front Page
                 [x] Dr. Jordan Peterson's Name at the Top
                 [x] r. Jordan Peterson's Portrait in the middle.
-                [x] Textbox called "OPEN" on the center right portion of the webpage instead of a clasp. 
+                [x] Textbox called "OPEN"
                 [x] Make the text a hyperlink to the table of contents
-            - Table of Contents: 
-                - A header saying "Table of Contents"
-                - Bulleted list of links to pages 
-                - A textbook in the top-right corner of the screen that says "NEXT"
-                - Make the "NEXT" clickable 
-                - Include the block quote on the bottom of the webpage 
-
-                ```
-                <blockquote cite="https://www.goodreads.com/author/quotes/282885.Jordan_B_Peterson"> 
-                <p>
-
-                    “To stand up straight with your shoulders back is to accept the terrible responsibility of life, with eyes wide open. It means deciding to voluntarily transform the chaos of potential into the realities of habitable order. It means adopting the burden of self-conscious vulnerability, and accepting the end of the unconscious paradise of childhood, where finitude and mortality are only dimly comprehended. It means willingly undertaking the sacrifices necessary to generate a productive and meaningful reality (it means acting to please God, in the ancient language).” 
-
-                </p>
-                <cite>-- Dr. Jordan B. Peterson </cite>
-                </blockquote>      
-                ```          
-
+            - [x] Table of Contents: 
+                - [x] A header saying "Table of Contents"
+                - [x] Bulleted list of links to pages 
+                - [x] Clickable NEXT button
+                - [x] Include the block quote on the bottom of the webpage 
+        - Since I completed the above placeholder content, now it's time to do the following: 
+            - [ ] Make the "OPEN" button in the front page positioned in the center-right of the page.
+            - [ ] Position the NEXT button at the top-right of the page. 
                 
 
