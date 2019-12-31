@@ -85,5 +85,7 @@ Dr. Peterson is the father that thousands, hundreds of thousands of men, perhaps
         - Since I completed the above placeholder content, now it's time to do the following: 
             - [x] Make the "OPEN" button in the front page positioned in the center-right of the page.
                 - I think I can do this by using a flexbox and having the elements flow from left to right in a row, instead of a column. That way, the open will already be  positioned on the right. 
-            - [ ] Position the NEXT button at the top-right of the page. 
+            - [x] Position the NEXT button at the top-right of the page. 
+    - After positioning the table of contents' left and right pages, I noticed that there doesn't seem to be enough room for both a left and right side.... esp. if I want to make this a mobile-friendly website. Perhaps, I should split the left and right pages into their own separate webpages. Then, I can have the pages be bigger and still readable on a mobile device. Okay, supposing I did that, how would I want to change my timeline? I think that if I were to do that, to be consistent with the rest of my pages, I'd want my timeline to go from top to bottom instead of left to right, so that users can just scroll down. 
+        - [ ] Split Table of Contents into two: (1) Table of Contents (with the links) and (2) Quote page. 
 
