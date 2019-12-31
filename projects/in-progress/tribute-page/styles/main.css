@@ -2,22 +2,22 @@
 @import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap');
 
-/* Universal settings */ 
+/* Universal settings */
 main {
     background: white;
 
-    height: 99vh; 
+    height: 99vh;
 
     display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
     font-family: 'IM Fell English', serif, 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
     font-size: 25px;
 
-    border-color: brown; 
-    border-style: dashed; 
+    border-color: brown;
+    border-style: dashed;
 }
 
 
@@ -29,25 +29,40 @@ h2 {
     font-size: 1.5em;
 }
 
+/* Style the cover */
+#cover, .left-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    align-items: center;
+
+    border-color: orange;
+    border-style: dashed;
+    border-width: 5px;
+    width: 65vh;
+    height: 85vh;
+    
+}
+
 /* Style the book */
 .book {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    
-    border-color: orange; 
-    border-style: dashed; 
-    border-width: 5px; 
-    width: 65vh; 
-    height: 85vh; 
-    align-items: center; 
+
+    border-color: orange;
+    border-style: dashed;
+    border-width: 5px;
+    width: 65vh;
+    height: 85vh;
+    align-items: center;
 }
 
 .book .right-page blockquote {
-    font-size: 1.20em; 
+    font-size: 1.20em;
 
     border-style: dashed;
-    border-color: red; 
-    border-width: 10px; 
+    border-color: red;
+    border-width: 10px;
     margin: 2vh 0vh 2vh 7vh;
 }
