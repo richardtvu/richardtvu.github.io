@@ -83,7 +83,7 @@ Dr. Peterson is the father that thousands, hundreds of thousands of men, perhaps
     - By the way, I may have said "will" before, I don't mean that I intend to carry it to fruition. I mean "will" as in how it will look if I were to implement that idea. This project is more of an exploration for me than it is something that I *have* to complete. 
     - Thus, what do I want to do today? 
         - Since I completed the above placeholder content, now it's time to do the following: 
-            - [ ] Make the "OPEN" button in the front page positioned in the center-right of the page.
+            - [x] Make the "OPEN" button in the front page positioned in the center-right of the page.
                 - I think I can do this by using a flexbox and having the elements flow from left to right in a row, instead of a column. That way, the open will already be  positioned on the right. 
             - [ ] Position the NEXT button at the top-right of the page. 
 
