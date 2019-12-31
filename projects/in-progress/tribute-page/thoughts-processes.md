@@ -62,20 +62,28 @@ Dr. Peterson is the father that thousands, hundreds of thousands of men, perhaps
 
 ## Timeline: 
 
-    - December 30, 2019: 
-        - Today, my goal is to get the outline of the front page and the table of contents running. 
-            - [x] A Front Page
-                [x] Dr. Jordan Peterson's Name at the Top
-                [x] r. Jordan Peterson's Portrait in the middle.
-                [x] Textbox called "OPEN"
-                [x] Make the text a hyperlink to the table of contents
-            - [x] Table of Contents: 
-                - [x] A header saying "Table of Contents"
-                - [x] Bulleted list of links to pages 
-                - [x] Clickable NEXT button
-                - [x] Include the block quote on the bottom of the webpage 
+* December 30, 2019 / Monday: 
+    - Today, my goal is to get the outline of the front page and the table of contents running.
+        - [x] A Front Page
+
+            - [x] Dr. Jordan Peterson's Name at the Top
+            - [x] r. Jordan Peterson's Portrait in the middle.
+            - [x] Textbox called "OPEN"
+            - [x] Make the text a hyperlink to the table of contents
+
+        - [x] Table of Contents: 
+            - [x] A header saying "Table of Contents"
+            - [x] Bulleted list of links to pages 
+            - [x] Clickable NEXT button
+            - [x] Include the block quote on the bottom of the webpage 
+* December 31, 2019 / Tuesday: 
+    - In my journaling session, I had some images pop up into my head about how I want my tribute to look. Imagine a rectangle that represents the web browser. The top part of it is going to be the bar. Whatever else that remains is going to be the "wood" table upon which the book will rest. IN the lower-left hand corner of the screen, there will be a candle that will "light" up the page for the user to see (perhaps, it should be a yellow-ish light?). 
+        - In the beginning, when the book is closed. The book should be centered in the middle of the table, with the clasp, etc. pages, etc. 
+        - Once the book is opened, it should look like an open book with a left and right page. The clasp should sitll be there, perhaps on the right or left side. Each time the page is flipped, the table, candle, clasp should remain there. 
+    - By the way, I may have said "will" before, I don't mean that I intend to carry it to fruition. I mean "will" as in how it will look if I were to implement that idea. This project is more of an exploration for me than it is something that I *have* to complete. 
+    - Thus, what do I want to do today? 
         - Since I completed the above placeholder content, now it's time to do the following: 
             - [ ] Make the "OPEN" button in the front page positioned in the center-right of the page.
+                - I think I can do this by using a flexbox and having the elements flow from left to right in a row, instead of a column. That way, the open will already be  positioned on the right. 
             - [ ] Position the NEXT button at the top-right of the page. 
-                
 
