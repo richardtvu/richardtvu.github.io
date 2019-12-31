@@ -1,6 +1,6 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap');
 
 /* Universal settings */ 
 main {
@@ -13,8 +13,8 @@ main {
     justify-content: center; 
     align-items: center; 
 
-    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: 'IM Fell English', serif, 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
 }
 
 h1 {
