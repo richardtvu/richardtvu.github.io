@@ -38,5 +38,16 @@ h2 {
     border-color: orange; 
     border-style: dashed; 
     border-width: 5px; 
+    width: 65vh; 
+    height: 85vh; 
+    align-items: center; 
 }
 
+.book .right-page blockquote {
+    font-size: 1.20em; 
+
+    border-style: dashed;
+    border-color: red; 
+    border-width: 10px; 
+    margin: 2vh 0vh 2vh 7vh;
+}
