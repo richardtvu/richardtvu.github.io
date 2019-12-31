@@ -15,7 +15,11 @@ main {
 
     font-family: 'IM Fell English', serif, 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
     font-size: 25px;
+
+    border-color: brown; 
+    border-style: dashed; 
 }
+
 
 h1 {
     font-size: 2em;
@@ -23,5 +27,16 @@ h1 {
 
 h2 {
     font-size: 1.5em;
+}
+
+/* Style the book */
+.book {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    border-color: orange; 
+    border-style: dashed; 
+    border-width: 5px; 
 }
 
