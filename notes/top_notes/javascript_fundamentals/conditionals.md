@@ -75,12 +75,20 @@
   ```JavaScript
   ( condition ) ? 'run this code' : 'run this code instead'
   ```
-  
+
   - e.g.
-  
+
   ```JavaScript
   let greeting = ( isBirthday ) ? 'Happy birthday Mrs. Smith - we hope you have a great day!' : 'Good morning Mrs. Smith.';
   ```
-  
 
 ### Active Learning: A Simple Calendar
+
+Goal: Create a calendar application with
+
+  - `<select>` element to choose between different months: January - December
+  - `onchange` event handler to detect when value in `<select>` is changed
+    - Write a conditional statement within above handler to:
+      - check value of month stored in `choice` variable, the value of the `<select>` element after value changes, e.g. "January"
+      - set value of `days` equal to # of days in each month 
+  - `createCalendar()` function to draw calendar and display correct month in `<h1>` element
