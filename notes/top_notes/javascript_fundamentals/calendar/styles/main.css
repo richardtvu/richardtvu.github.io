@@ -1,1 +1,56 @@
-@import url("reset.css"); 
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 20px;
+}
+
+h1,
+#title strong {
+  font-size: 2em;
+  margin: 10px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+li {
+  display: flex;
+  float: left;
+  width: 20%;
+  border: 2px solid white;
+  padding: 5px;
+  height: 40px;
+  background-color: #4a2db6;
+  color: white;
+}
+
+ul {
+    box-sizing: border-box; 
+    padding-left: 10%; 
+}
+
+#output {
+    height: 500px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#select-month {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
