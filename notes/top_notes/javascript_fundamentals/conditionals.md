@@ -86,9 +86,38 @@
 
 Goal: Create a calendar application with
 
-  - `<select>` element to choose between different months: January - December
-  - `onchange` event handler to detect when value in `<select>` is changed
-    - Write a conditional statement within above handler to:
-      - check value of month stored in `choice` variable, the value of the `<select>` element after value changes, e.g. "January"
-      - set value of `days` equal to # of days in each month 
-  - `createCalendar()` function to draw calendar and display correct month in `<h1>` element
+- [x] `<select>` element to choose between different months: January - December
+- `onchange` event handler to detect when value in `<select>` is changed
+  - Write a conditional statement within above handler to:
+    - check value of month stored in `choice` variable, the value of the `<select>` element after value changes, e.g. "January"
+    - set value of `days` equal to # of days in each month
+- `createCalendar()` function to draw calendar and display correct month in `<h1>` element
+
+Some extra information:
+
+- How many days are there per month?
+  > 30 days hath September,
+  > April, June and November,
+  > All the rest have 31,
+  > Excepting February alone
+  > (And that has 28 days clear,
+  - http://www.eudesign.com/mnems/dayspcm.htm
+  - January - 31
+  - February - 28
+  - March - 31
+  - April - 30
+  - May - 31
+  - June - 30
+  - July - 31
+  - August - 31
+  - September - 30
+  - October - 31
+  - November - 30
+  - December - 31
+- What is the default # of days in a month? 
+  - 31
+
+- Based on the above, which conditions do I want to check for?
+  - Whether a month is:
+    - February
+    - April, June, September, November
