@@ -84,7 +84,7 @@
 
 ### Active Learning: A Simple Calendar
 
-Goal: Create a calendar application with
+[x] Goal: Create a calendar application with
 
 - [x] `<select>` element to choose between different months: January - December
 - `onchange` event handler to detect when value in `<select>` is changed
@@ -121,3 +121,6 @@ Some extra information:
   - Whether a month is:
     - February
     - April, June, September, November
+
+### Active learning: More color choices!
+

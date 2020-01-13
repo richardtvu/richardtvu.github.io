@@ -1,55 +1,60 @@
-<!--Code sourced from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals-->
+<!-- Code taken from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals-->
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Switch example</title>
-  </head>
-  <body>
-    <!--A drop-down menu for the type of weather.-->
-    <label for="weather">Select the weather type today: </label>
-    <select id="weather">
-      <option value="">--Make a choice--</option>
-      <option value="sunny">Sunny</option>
-      <option value="rainy">Rainy</option>
-      <option value="snowing">Snowing</option>
-      <option value="overcast">Overcast</option>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch Statements and Colors</title>
+</head>
+<!--This website will use switch statements to change the color theme-->
+<body>
+    <label for="theme">Select theme: </label>
+    <select id="theme">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+        <option value="purple">Purple</option>
+        <option value="yellow">Yellow</option>
+        <option value="psychedelic">Psychedelic</option>
     </select>
 
-    <p></p>
+    <h1>This is my website</h1>
 
+    <!-- When the theme is set to 'black', change the background to black and the text to 'white'. Otherwise, change the background to 'white' and the text to 'black' -->
     <script>
-      // Assign the result of selecting the select element to a variable called select.
-      const select = document.querySelector("select");
-      // Assign the result of selecting the 'p' element to a variable called para.
-      const para = document.querySelector("p");
+        const select = document.querySelector('select'); 
+        const html = document.querySelector('html');
+        document.body.style.padding = '10px';
 
-      //Add an event listener that will track when changes occur to the value of the select element. Should there be any change, execute the setWeather function.
-      select.addEventListener("change", setWeather);
 
-      // Change the value of the text between the paragraph tags to an appropriate recommendation.
-      function setWeather() {
-        // Assign the value of the 'select' element to a variable called choice.
-        const choice = select.value;
+        select.onchange = function() {
+            const choice = select.value; 
+            switch(option) {
+            case '1':
+            // action 1
+            break;
+            case '2':
+            // action 2
+            break;
+            case '...':
+            // action ...
+            break;
+            case 'n' :
+            // action n
+            break;
+            default:
+            // default action
 
-        // Depending on the choice of the user, change the value of the text between the paragraph tags.
-        switch (choice) {
-          case "sunny":
-            para.textContent = "Go to the beach.";
-            break;
-          case "rainy":
-            para.textContent = "Wear a rain coat.";
-            break;
-          case "snowing":
-            para.textContent = "Stay inside and drink hot chocolate.";
-            break;
-          case "overcast":
-            para.textContent = "Bring an umbrella.";
-            break;
-          default:
-            para.textContent = "";
+            ( select.value === 'black' ) ? update('black', 'white') : update('white', 'black'); 
+            } 
         }
-      }
+
+        function update(bgColor, textColor) {
+            html.style.backgroundColor = bgColor; 
+            html.style.color = textColor; 
+        }
+
     </script>
-  </body>
+    
+</body>
 </html>
