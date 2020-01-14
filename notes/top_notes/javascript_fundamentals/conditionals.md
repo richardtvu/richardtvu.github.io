@@ -114,7 +114,8 @@ Some extra information:
   - October - 31
   - November - 30
   - December - 31
-- What is the default # of days in a month? 
+- What is the default # of days in a month?
+
   - 31
 
 - Based on the above, which conditions do I want to check for?
@@ -122,94 +123,136 @@ Some extra information:
     - February
     - April, June, September, November
 
-
-## Conditional Operators: if, '?' 
+## Conditional Operators: if, '?'
 
 https://javascript.info/ifelse
 
 1. Using the `if..else` construct, write the code which asks: 'What is the "official" name of JavaScript?'
-    - If the visitor enters "ECMAScript", then output "Right!", otherwise output: "Didn't know? ECMASCript!"
-    
-    ```JavaScript
-    let name = prompt('What is the "official" name of JavaScript?'); 
 
-    if (name == 'ECMAScript') {
-      alert("Right!"); 
-    } else {
-      alert("Didn't know? ECMAScript!"); 
-    }
-    ```
+   - If the visitor enters "ECMAScript", then output "Right!", otherwise output: "Didn't know? ECMASCript!"
 
-2. Show the sign. Using `if..else`, write the code which gets a number via `prompt` and then shows in `alert`: 
-    - `1`, if the value is greater than zero, 
-    - `-1`, if less than zero, 
-    - `0`, if equals 0. 
+   ```JavaScript
+   let name = prompt('What is the "official" name of JavaScript?');
 
-    ```JavaScript
-    let number = prompt("Input a number.");
+   if (name == 'ECMAScript') {
+     alert("Right!");
+   } else {
+     alert("Didn't know? ECMAScript!");
+   }
+   ```
 
-    if (number > 0) {
-      alert(1); 
-    } else if (number < 0) {
-      alert(0);
-    } else {
-      alert(-1); 
-    }
-    ```
+2. Show the sign. Using `if..else`, write the code which gets a number via `prompt` and then shows in `alert`:
 
-3. Rewrite `if` into `?`: 
-  - Original: 
+   - `1`, if the value is greater than zero,
+   - `-1`, if less than zero,
+   - `0`, if equals 0.
 
-    ```JavaScript
-    let result; 
-    
-    if (a + b < 4) {
-      result = 'Below';
-    } else {
-      result = 'Over';
-    }
-    ```
+   ```JavaScript
+   let number = prompt("Input a number.");
 
-  - My answer Using `?`: 
-    
-    ```JavaScript
-    let result; 
+   if (number > 0) {
+     alert(1);
+   } else if (number < 0) {
+     alert(0);
+   } else {
+     alert(-1);
+   }
+   ```
 
-    (a + b < 4) ? result = 'Below' : result = 'Over'; 
-    ```
-  
-  - Solution: 
-    
-    ```JavaScript
-    let result = (a + b < 4) ? 'Below' : 'Over'; 
-    ```   
+3. Rewrite `if` into `?`:
 
-4. Rewrite `if..else` using multiple ternary operators `?`. 
+- Original:
 
-  - Original: 
+  ```JavaScript
+  let result;
 
-    ```JavaScript
-    let message; 
+  if (a + b < 4) {
+    result = 'Below';
+  } else {
+    result = 'Over';
+  }
+  ```
 
-    if (login == 'Employee') {
-      message = 'Hello'; 
-    } else if (login == 'Director') {
-      message = 'Greetings'; 
-    } else if (login == '') {
-      message = 'No login'; 
-    } else {
-      message = ''; 
-    }
-    ``` 
+- My answer Using `?`:
 
-  - My rewritten solution == Same as solution!: 
-    
-    ```JavaScript
-    let message = (login == 'Employee') ? 'Hello' : 
-      (login == 'Director') ? 'Greetings' : 
-      (login == '')         ? 'No login'  : 
-      ''; 
-    ``` 
+  ```JavaScript
+  let result;
+
+  (a + b < 4) ? result = 'Below' : result = 'Over';
+  ```
+
+- Solution:
+
+  ```JavaScript
+  let result = (a + b < 4) ? 'Below' : 'Over';
+  ```
+
+4. Rewrite `if..else` using multiple ternary operators `?`.
+
+- Original:
+
+  ```JavaScript
+  let message;
+
+  if (login == 'Employee') {
+    message = 'Hello';
+  } else if (login == 'Director') {
+    message = 'Greetings';
+  } else if (login == '') {
+    message = 'No login';
+  } else {
+    message = '';
+  }
+  ```
+
+- My rewritten solution == Same as solution!:
+
+  ```JavaScript
+  let message = (login == 'Employee') ? 'Hello' :
+    (login == 'Director') ? 'Greetings' :
+    (login == '')         ? 'No login'  :
+    '';
+  ```
 
 ## [How to Use the Switch Statement in JavaScript](https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript)
 
+- Can be used with ranges
+
+  ```JavaScript
+  //Set the student's grade;
+  const grade = 79;
+
+  switch(true) {
+      // if score is 90 or greater
+      case grade >= 90:
+          console.log("A");
+          break;
+      // if score is 80 or greater
+      case grade >= 80:
+          console.log("B")
+          console.log("Asian mother will be angry with you.");
+          break;
+      default:
+          console.log("Disowned");
+          break;
+  }
+  ```
+
+- Can have multiple cases with the same output
+
+  ```JavaScript
+  // Set the letter grade
+  const letterGrade = 'C';
+
+  switch(letterGrade) {
+  case 'A':
+    console.log("As expected, you were average. Do better.");
+    break;
+  case 'B':
+  case 'C':
+  case 'D':
+  case 'F':
+    console.log("Leave this house immediately. You have disgraced our ancestors.");
+    break;
+  }
+  ```
