@@ -122,5 +122,94 @@ Some extra information:
     - February
     - April, June, September, November
 
-### Active learning: More color choices!
+
+## Conditional Operators: if, '?' 
+
+https://javascript.info/ifelse
+
+1. Using the `if..else` construct, write the code which asks: 'What is the "official" name of JavaScript?'
+    - If the visitor enters "ECMAScript", then output "Right!", otherwise output: "Didn't know? ECMASCript!"
+    
+    ```JavaScript
+    let name = prompt('What is the "official" name of JavaScript?'); 
+
+    if (name == 'ECMAScript') {
+      alert("Right!"); 
+    } else {
+      alert("Didn't know? ECMAScript!"); 
+    }
+    ```
+
+2. Show the sign. Using `if..else`, write the code which gets a number via `prompt` and then shows in `alert`: 
+    - `1`, if the value is greater than zero, 
+    - `-1`, if less than zero, 
+    - `0`, if equals 0. 
+
+    ```JavaScript
+    let number = prompt("Input a number.");
+
+    if (number > 0) {
+      alert(1); 
+    } else if (number < 0) {
+      alert(0);
+    } else {
+      alert(-1); 
+    }
+    ```
+
+3. Rewrite `if` into `?`: 
+  - Original: 
+
+    ```JavaScript
+    let result; 
+    
+    if (a + b < 4) {
+      result = 'Below';
+    } else {
+      result = 'Over';
+    }
+    ```
+
+  - My answer Using `?`: 
+    
+    ```JavaScript
+    let result; 
+
+    (a + b < 4) ? result = 'Below' : result = 'Over'; 
+    ```
+  
+  - Solution: 
+    
+    ```JavaScript
+    let result = (a + b < 4) ? 'Below' : 'Over'; 
+    ```   
+
+4. Rewrite `if..else` using multiple ternary operators `?`. 
+
+  - Original: 
+
+    ```JavaScript
+    let message; 
+
+    if (login == 'Employee') {
+      message = 'Hello'; 
+    } else if (login == 'Director') {
+      message = 'Greetings'; 
+    } else if (login == '') {
+      message = 'No login'; 
+    } else {
+      message = ''; 
+    }
+    ``` 
+
+  - My rewritten solution == Same as solution!: 
+    
+    ```JavaScript
+    let message = (login == 'Employee') ? 'Hello' : 
+      (login == 'Director') ? 'Greetings' : 
+      (login == '')         ? 'No login'  : 
+      ''; 
+    ``` 
+
+## [How to Use the Switch Statement in JavaScript](https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript)
 

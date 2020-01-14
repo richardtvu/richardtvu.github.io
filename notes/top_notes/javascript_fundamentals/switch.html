@@ -29,23 +29,21 @@
 
         select.onchange = function() {
             const choice = select.value; 
-            switch(option) {
-            case '1':
-            // action 1
-            break;
-            case '2':
-            // action 2
-            break;
-            case '...':
-            // action ...
-            break;
-            case 'n' :
-            // action n
-            break;
-            default:
-            // default action
-
-            ( select.value === 'black' ) ? update('black', 'white') : update('white', 'black'); 
+            switch(choice) {
+                case 'black':
+                    update('black', 'white'); 
+                    break;
+                case 'purple':
+                    update('purple', 'white');
+                    break;
+                case 'yellow' :
+                    update('yellow', 'white'); 
+                    break;
+                case 'psychedelic':
+                    update('lime', 'purple');
+                    break; 
+                default:
+                    update('white', 'black'); 
             } 
         }
 
@@ -53,8 +51,57 @@
             html.style.backgroundColor = bgColor; 
             html.style.color = textColor; 
         }
-
     </script>
     
+
+    <script>
+    const day = new Date().getDay(); 
+
+    switch(day) {
+        case 1: 
+            console.log("Happy Monday"); 
+            break; 
+        case 2: 
+            console.log("It's Tuesday. You got this!");
+            break; 
+        case 3: 
+            console.log("Hump day already!"); 
+            break;
+        case 4: 
+            console.log("It's just one more day 'til the weekend!"); 
+            break;
+        case 5: 
+            console.log("Happy Friday!"); 
+            break; 
+        case 6: 
+            console.log("Have a wonderful Saturday!"); 
+            break; 
+        case 7: 
+            console.log("It's Sunday, time to relax!"); 
+            break;
+        default: 
+        }
+    </script>
+
+    <!--Numeral grade to letter grade converter-->
+    <script>
+    //Set the student's grade;
+    const grade = 79; 
+
+    switch(true) {
+        // if score is 90 or greater
+        case grade >= 90:
+            console.log("A");
+            break; 
+        // if score is 80 or greater
+        case grade >= 80: 
+            console.log("B")
+            console.log("Asian mother will be angry with you.");
+            break;
+        default:
+            console.log("Disowned");
+            break;
+    }
+    </script>
 </body>
 </html>
