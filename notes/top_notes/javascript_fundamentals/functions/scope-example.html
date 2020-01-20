@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Function scope example</title>
+  </head>
+  <body>
+    <!--See https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions-->
+    <script>
+      let x = 1;
+
+      function a() {
+        let y = 2;
+        output(z);
+      }
+
+      function b() {
+        let z = 3;
+        output(y);
+      }
+
+      function output(value) {
+        const para = document.createElement("p");
+        document.body.appendChild(para);
+        para.textContent = "Value: " + value;
+      }
+      function printFavoritePerson() {
+        let heroTitle = "Dr.";
+        let heroFirstName = "Jordan";
+        let heroLastName = "Peterson";
+
+        printTitle(heroTitle);
+        printFirstName(heroFirstName);
+        printLastName(heroLastName);
+      }
+
+      function printTitle(value) {
+        console.log(value);
+      }
+
+      function printFirstName(value) {
+        console.log(value);
+      }
+
+      function printLastName(value) {
+        console.log(value);
+      }
+
+      function myBigFunction() {
+        let myValue = 1;
+
+        subFunction1(myValue);
+        subFunction2(myValue);
+        subFunction3(myValue);
+      }
+
+      function subFunction1(value) {
+        console.log(value);
+      }
+
+      function subFunction2(value) {
+        console.log(value);
+      }
+
+      function subFunction3(value) {
+        console.log(value);
+      }
+    </script>
+  </body>
+</html>

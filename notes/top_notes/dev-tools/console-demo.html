@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Console Demo</title>
+  </head>
+  <!--https://developers.google.com/web/tools/chrome-devtools/console-->
+  <body>
+    <h1>Hello, World!</h1>
+    <!--The following will have comments detailing what each portion of the script is supposed to do for my own understanding. I understand that comments are supposed to detail the purpose/why behind something rather than explain what something is doing mechanistically.-->
+    <script>
+      // Print 'Loading!' to the console.
+      console.log("Loading!");
+      // Select an element in the document called 'h1' and store it in a constant variable, one that won't change, called h1.
+      const h1 = document.querySelector("h1");
+      // Take the text that is between the h1 tags and print them to the console.
+      console.log(h1.textContent);
+      // I'm not sure what the assert is for, but based off of my cursory knowledge of QA testing, I think it's a message that's supposed to go off if something is not found. That is, if there is no 'h2' element, then it will print to the log that 'h2 not found'. When you have an 'h2' element. No assertion is there 
+      console.assert(document.querySelector("h2"), "h2 not found!");
+      // This seems to be creating an array? or something? Not sure what exactly this is doing, but in general it's storing the first and last name pairs of artists into a constant variable.
+      const artists = [
+        {
+          first: "Rene",
+          last: "Magritte"
+        },
+        {
+          first: "Chaim",
+          last: "Soutine"
+        },
+        {
+          first: "Henri",
+          last: "Matisse"
+        }
+      ];
+      // Make a table of the values in artist and print it in the log. The first column will the be index, position of the pairing, followed by first and then last. 
+      console.table(artists); 
+      // I'm not exactly sure what this will do, but I think it will first display 'Hello, Console!' , followed by 'Hello, World!'.... Tried it out, what actually happened was that it logged 'Hello, Console!'. I see my mistake, the first line was changing the text between the heading tags to 'Hello, Console!' and then displaying it in the log. The 3000 is the parameter that tells javascript to wait until 3s have passed and then display the message. 
+      setTimeout(() => {
+          h1.textContent = 'Hello, Console!'; 
+          console.log(h1.textContent); 
+      }, 3000);
+
+
+    </script>
+  </body>
+</html>
