@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Function library example</title>
+    <style>
+      input {
+        font-size: 2em;
+        margin: 10px 1px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Obtained from https://github.com/mdn/learning-area/blob/master/javascript/building-blocks/functions/function-library.html-->
+
+    <input class="numberInput" type="text" />
+    <p></p>
+
+    <script>
+      /* I have a gap in my understanding of what exactly querySelector does.*/
+      // When it selects an element, does it return a reference to the element or the value of the element? Is it an object that is being stored?
+
+      // Get the text typed into the element of class numberInput and store it in a variable called input
+      const input = document.querySelector(".numberInput");
+      // Select the paragraph element and assign the reference to that element in something called para
+      const para = document.querySelector("p");
+
+      function squared(number) {
+          return number ** 2; 
+      }
+
+      function cubed(number) {
+          return number ** 3; 
+      }
+
+      function factorial(number) {
+          let x = number; 
+          while (x > 1) {
+              // Multiply the number by (x-1) and set the value of num to the product
+              number *= (x-1);
+              // Subtract 1 from x
+              x--;
+          }
+          return number
+      }
+
+      // When there is some change to the input of the textbox, run the following anonymous function 
+      input.onchange = function() {
+          const number = input.value; 
+          if (isNaN(number)) {
+              // If the input isn't a number, let the user know that. 
+              para.textContent = 'You need to enter a number!'; 
+          } else {
+              // If the input is a number, generate messages for the square, cube, and factorial of the number and display those messages in between the paragraph tags. 
+              para.textContent = 
+              number + ' squared is '  + squared(number)     + '. ' + 
+              number + ' cubed is '     + cubed(number)       + '. ' + 
+              number + ' factorial is ' + factorial(number)   + '. '; 
+          }
+
+      }
+
+      function squareRoot(number) {
+          // error handling 
+          if (isNaN(number)) {
+              console.log("You didn't input a number."); 
+              number = prompt("Try again? Input a number.");
+              squareRoot(number); 
+          }
+          return number ** (0.5); 
+      }
+
+      function cubeRoot(number) {
+          return number ** (1/3); 
+      }
+
+      function circleCircumference(radius) {
+          return 2 * Math.PI * radius; 
+      }
+       
+
+    </script>
+  </body>
+</html>

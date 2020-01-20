@@ -2,8 +2,8 @@
 - https://www.theodinproject.com/courses/web-development-101/lessons/fundamentals-part-3?ref=lnav 
 
 ## Assignments
-- [ ] [MDN Functions Article](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
--  [ ] [Return values](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values)
+- [x] [MDN Functions Article](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+- [x] [Return values](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values)
 - [ ] Parameters and arguments
 - [ ] [Newer JavaScript.info](http://javascript.info/function-basics)
 - [ ] [Functions Context](http://javascript.info/function-expressions)
