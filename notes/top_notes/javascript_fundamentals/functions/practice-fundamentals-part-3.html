@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Fundamentals P. 3 Practice</title>
+</head>
+<body>
+    <script>
+        // function that takes a number and returns that number + 7 
+        function add7(number) {
+            return number += 7;
+        }
+
+        // function that returns product of two numbers
+        function multiply(firstNum, secondNum) {
+            return firstNum * secondNum; 
+        }
+
+        // function that takes a string and returns a string with only the first letter capitalized. 
+        function capitalize(string) {
+            smallLetters = string.substr(1).toLowerCase(); 
+            bigLetter = string.charAt(0).toUpperCase(); 
+            return bigLetter + smallLetters; 
+        }
+
+        // function called lastLetter that takes a string and returns the very last letter of that string 
+        function lastLetter(string) {
+            let last = string.length - 1; 
+            return string.charAt(last); 
+        }
+    </script>
+    
+</body>
+</html>
