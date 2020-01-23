@@ -1,0 +1,6 @@
+[submodule "projects/in-progress/projects/in-progress/rock-paper-scissors"]
+	path = projects/in-progress/projects/in-progress/rock-paper-scissors
+	url = git@github.com:richardtvu/rock-paper-scissors.git
+[submodule "projects/in-progress/rock-paper-scissors"]
+	path = projects/in-progress/rock-paper-scissors
+	url = git@github.com:richardtvu/rock-paper-scissors.git
