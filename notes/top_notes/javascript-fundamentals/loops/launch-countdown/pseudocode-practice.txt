@@ -1,0 +1,28 @@
+This document will be my pseudocode document for the launch countdown project. Since I am unpracticed with the pseudocode programming process, I will be following Wikihow's tutorial on creating a pseudocode document for Mozilla's Active learning project. See https://www.wikihow.com/Write-Pseudocode#_note-5 and https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code
+
+Launch Countdown
+-----------------------------------------------------------------
+Purpose: This program will display a countdown from 10 on separate lines on the webpage. The first line will show "Countdown 10", each subsequent line will display just the number (i.e. 9, 8, 7...) except for when the countdown gets to 0; that line will show "Blast off!". 
+-----------------------------------------------------------------
+
+select an area on the webpage where the countdown will be displayed 
+set the text in the area to be empty 
+
+initialize the variable to keep track of the countdown
+    set the variable to 10 
+
+
+loop down from 10 down to 0,
+    initialize a new paragraph 
+    IF the number is 10, add "Countdown 10" to the paragraph,
+    ELSE IF the number is 0, add "Blast off!" to the paragraph,
+    ELSE add just the number to the paragraph. 
+    
+    display the new paragraph
+    
+    decrease the number by 1 for each loop  
+
+update the paragraph with the countdown 
+
+display the paragraph on the page 
+
