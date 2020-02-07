@@ -1,0 +1,11 @@
+Filling in a guest list 
+---------------------------------------------------------
+Purpose: This program will take a list of names in a stored array and filter items into a list of guests to refuse and a list of guests to admit. 
+---------------------------------------------------------
+
+// initialize the loop 
+// set exit condition 
+// iterate through people array 
+    // check if array item is equal to "Phil" or "Lola" 
+    // IF equal, THEN add item to 'refused' list with a comma and space at the end 
+    // ELSE add item to 'admitted' list with a comma and space at the end 
