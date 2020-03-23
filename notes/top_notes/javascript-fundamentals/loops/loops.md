@@ -91,12 +91,7 @@
         i++;
       }
 
-      
-- How do you choose which loop type to use?
 
-### Active learning: Launch countdown! How do you print a simple launch countdown to the output box from 10 to Blastoff?
-
-### Active learning: Filling in a guest list. How do you take a list of names stored in an array and put them in a guest list?
 
 ## [JavaScript.info](http://javascript.info/while-for)
 

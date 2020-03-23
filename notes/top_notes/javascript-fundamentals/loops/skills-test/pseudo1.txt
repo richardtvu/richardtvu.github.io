@@ -1,0 +1,14 @@
+Listing Array Items 
+---------------------------------------------------------
+Purpose: This program will loop through the elements in an array, append those elements to a list, and display the list on the screen. 
+---------------------------------------------------------
+
+// array items
+
+// list 
+
+// FOR each element, create a list item containing the element and append that item to the list. 
+
+// Display the list. 
+
+
