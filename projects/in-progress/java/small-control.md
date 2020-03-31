@@ -215,11 +215,11 @@ public class MeasurementConverter {
 
   - Sequential access of arrays involves processing elements one by one, in order. By contrast, **random access** of arrays means that the difficulty of accessing an element is equal for any given element.
 
-  - For instance, you could randomly generate a birthday between 0 and 364 and then check an array of boolean values to see if it's been generated before. Thus, any one of the elements in the boolean array would have an equal chance of being accessed. 
-  
-  - For an array, `used`, with 365 elements of type `boolean`, this loop will _randomly_ generate a number from 0-364, so each element has an equal chance of being accessed in each loop. 
+  - For instance, you could randomly generate a birthday between 0 and 364 and then check an array of boolean values to see if it's been generated before. Thus, any one of the elements in the boolean array would have an equal chance of being accessed.
 
-    ```Java
+  - For an array, `used`, with 365 elements of type `boolean`, this loop will _randomly_ generate a number from 0-364, so each element has an equal chance of being accessed in each loop.
+
+    ```java
     while (true) {
       int birthday; 
       birthday = (int)(Math.random()*365); 
@@ -235,7 +235,68 @@ public class MeasurementConverter {
     }
     ```
 
-  - Can the size of arrays be changed? 
+  - Why do you need a separate counter variable to keep track of how many spaces in a _partially filled array_ are in use?
 
-    - No. 
+    - The size of an array cannot be changed. That is, the array size won't dynamically change as the number of spaces used increases or decreases. Thus, some spaces will be filled with useful data, but others will simply be filled with something to indicate that they're empty.
 
+  - What can you use 2D arrays for?
+
+    - Many things, like game boards, two dimensional relationships.
+
+### Section 3.9\. Introduction to GUI Programming
+
+- What is JavaFX?
+
+  - The set of classes that contain tools used for GUI programming, e.g. drawing rectangles and creating animations.
+
+- What is the role of **pixels** and **coordinate systems** in drawing shapes?
+
+  - To draw a shape, the computer changes the color of _pixels_, which are the small squares that make up the computer screen. 
+
+  - The _coordinate system_ is used for determining which pixels to color. There are two types of coordinates, which are **x** and **y**. The **x** coordinate determines the horizontal position of the pixel(s) to color. The **y** coordinate determines the vertical position of the pixel(s) to color. 
+
+    - For instance, a rectangular drawing area could have a width of 800px and a height of 500px, which means that the distance between the top-left corner of the rectangle and the top-right and bottom-left corners are 800 px and 500 px apart, respectively. 
+
+- How do you draw in Java?
+
+  - Use a **graphics context**.
+
+- What is a **graphics context**?
+
+  - An object with subroutines and variables used for drawing things, e.g. a method to draw a circle, a variable for the color/font.
+
+- What is the **drawing surface**? 
+  
+  - The area where the graphics context object draws on. 
+
+- What are the two ways to draw a shape using the graphics context?
+
+  1. **Fill** in a shape, coloring the pixels within the shape.
+
+  2. **Stroke** a shape, i.e. outlining the shape in some color.
+
+- What are some things that we can do with the graphics context object, `g`? 
+
+  - Set the color of the stroke line. 
+  - Set the color of the fill method. 
+  - Draw a line. 
+  - Outline a rectangle.
+  - Fill in a rectangular area. 
+  - Draw an oval.
+  - Fill in an oval area. 
+  - Use the oval method to draw or fill in a circular area. 
+
+- How might you use Java graphics to draw ten parallel lines? 
+  
+  - I'd use `g.strokeLine()`. I could then copy and paste that ten times with different y-values. Or use a loop to draw a line, increase the y-value by some amount, and then repeat 10 times total. 
+
+    ```Java
+    int heightInset = 50; 
+    int widthInset = 25; 
+
+        
+    for ( int i = 1; i <=10; i++) {
+      g.strokeLine(widthInset, heightInset, width-widthInset, heightInset);
+      heightInset += 50; 
+    }
+    ```
