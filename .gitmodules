@@ -10,3 +10,6 @@
 [submodule "notes/top_notes/notes/top_notes/javascript-exercises"]
 	path = notes/top_notes/notes/top_notes/javascript-exercises
 	url = git@github.com:TheOdinProject/javascript-exercises.git
+[submodule "notes/top_notes/javascript-exercises"]
+	path = notes/top_notes/javascript-exercises
+	url = git@github.com:TheOdinProject/javascript-exercises.git
