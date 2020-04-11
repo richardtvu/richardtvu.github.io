@@ -13,3 +13,6 @@
 [submodule "notes/top_notes/javascript-exercises"]
 	path = notes/top_notes/javascript-exercises
 	url = git@github.com:TheOdinProject/javascript-exercises.git
+[submodule "projects/in-progress/inside-sherpa/JPMC-tech-task-1-py3"]
+	path = projects/in-progress/inside-sherpa/JPMC-tech-task-1-py3
+	url = https://github.com/insidesherpa/JPMC-tech-task-1-py3.git
